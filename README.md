@@ -12,4 +12,5 @@ GNPS spectral libraries can be downloaded from: https://external.gnps2.org/gnpsl
 MoNA (MassBank of North America) spectral data are available at: https://mona.fiehnlab.ucdavis.edu/downloads.
 
 We will provide the source code of an end-to-end analysis platform, from mass spectrometry files to final analysis results.
+
 <img width="757" height="667" alt="platform" src="https://github.com/user-attachments/assets/6fc0bbeb-e83f-47a5-8585-db0e00c52f26" />
