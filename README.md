@@ -105,7 +105,7 @@ This module is used to configure the input mass spectrometry files and the outpu
 
 ## Release
 
-The GitHub Release provides a complete end-to-end analytical platform for PFAS non-target screening, spanning the entire workflow from raw mass spectrometry data to final result interpretation.https://github.com/HIAS-RCEES-FuLab/CaPFAS/releases/tag/CaPFAS-v1.0.
+The GitHub Release provides a complete end-to-end analytical platform for PFAS non-target screening, spanning the entire workflow from raw mass spectrometry data to final result interpretation. https://github.com/HIAS-RCEES-FuLab/CaPFAS/releases/tag/CaPFAS-v1.0.
 
 The release includes:
 
