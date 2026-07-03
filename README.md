@@ -84,15 +84,22 @@ This module performs hierarchical compound identification.
 
 All matching parameters can be customized according to the analytical requirements.
 
-### Identification
+### Input and Output Settings
 
-This module performs hierarchical compound identification.
+This module is used to configure the input mass spectrometry files and the output directory.
 
-1. **Exact mass and isotope pattern matching**.
-2. **Theoretical fragment prediction and matching**.The fragmentation tree depth determines the level of theoretical fragmentation. Increasing the tree depth produces more predicted fragments for matching.
-3. **MS/MS spectral matching** against reference spectra.
+- **Input files**
+  - CaPFAS currently supports standardized **mzML** format files.
+  - Click **Browse** to navigate to the directory containing the target MS files.
+  - Click **Add File** to add the selected file(s) to the processing queue.
 
-All matching parameters can be customized according to the analytical requirements.
+- **Output directory**
+  - Click **Browse** to specify the directory for saving analysis results.
+
+- **Run analysis**
+  - After configuring all parameters, click **Start** to begin processing. The platform will automatically execute the complete workflow, including feature mining, feature filtering, compound identification, and result generation.
+
+<img width="3884" height="2288" alt="图片1" src="https://github.com/user-attachments/assets/41cb5732-691a-4e55-ac48-425b961bdc3b" />
 
 ---
 
