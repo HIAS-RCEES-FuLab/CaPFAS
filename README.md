@@ -42,7 +42,7 @@ This module is used for MS feature extraction and preprocessing.
 
 - **Scan mode**
   - **DDA** is the recommended acquisition mode because each MS/MS spectrum is directly associated with its precursor ion.
-  - **DIA** and **Full Scan** data are also supported. Since precursor-specific MS/MS spectra are unavailable, CaPFAS performs model prediction directly using the acquired MS/MS spectra.
+  - **DIA** and **Full Scan** data are also supported. For DIA data, CaPFAS performs model prediction using the acquired window-based MS/MS spectra because precursor-specific MS/MS spectra are unavailable. For Full Scan data, where no MS/MS spectra are acquired, the model directly uses the acquired MS spectra for prediction.
 
 - **Ion mode**
   - Select the ionization mode according to the experimental data.
