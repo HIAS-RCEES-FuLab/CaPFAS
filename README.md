@@ -84,6 +84,16 @@ This module performs hierarchical compound identification.
 
 All matching parameters can be customized according to the analytical requirements.
 
+### Identification
+
+This module performs hierarchical compound identification.
+
+1. **Exact mass and isotope pattern matching**.
+2. **Theoretical fragment prediction and matching**.The fragmentation tree depth determines the level of theoretical fragmentation. Increasing the tree depth produces more predicted fragments for matching.
+3. **MS/MS spectral matching** against reference spectra.
+
+All matching parameters can be customized according to the analytical requirements.
+
 ---
 
 ## Release
