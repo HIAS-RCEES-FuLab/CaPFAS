@@ -28,9 +28,63 @@ The spectral databases used in this project include:
 
 ## Platform
 
+## Platform
+
 The graphical user interface of CaPFAS is shown below.
 
 <img width="757" height="667" alt="platform" src="https://github.com/user-attachments/assets/6fc0bbeb-e83f-47a5-8585-db0e00c52f26" />
+
+The platform consists of three main modules: **Peak Feature Mining**, **Feature Filtering**, and **Identification**.
+
+### Peak Feature Mining Parameter Settings
+
+This module is used for MS feature extraction and preprocessing.
+
+- **Scan mode**
+  - **DDA** is the recommended acquisition mode because each MS/MS spectrum is directly associated with its precursor ion.
+  - **DIA** and **Full Scan** data are also supported. Since precursor-specific MS/MS spectra are unavailable, CaPFAS performs model prediction directly using the acquired MS/MS spectra.
+
+- **Ion mode**
+  - Select the ionization mode according to the experimental data.
+  - **The current PFAS identification model is trained for negative ion mode only**, and therefore negative mode is recommended for PFAS analysis.
+
+- **Noise threshold**
+  - Defines the intensity threshold for noise removal.
+  - This parameter should be adjusted according to the performance and noise characteristics of the mass spectrometer used.
+
+- **Reverse analysis**
+  - Directly analyzes all acquired MS/MS spectra without performing peak feature extraction.
+
+- **Extract MS/MS**
+  - Extracts MS/MS spectra associated with detected features for downstream analysis.
+
+- **Single-trace filtering**
+  - Uses the OpenMS single-trace filtering algorithm to remove low-confidence features and reduce potential false-positive peaks.
+
+- **Adduct annotation**
+  - Annotates supported adduct ions according to predefined adduct rules.
+
+### Feature Filtering
+
+This module performs candidate screening.
+
+- **Filtering method**
+  - **PFAS ML** (default): the multimodal CaPFAS model developed in this work.
+  - Traditional screening methods are also available, including:
+    - Mass defect filtering
+    - Diagnostic fragment ion filtering
+    - Neutral loss filtering
+  - These methods can be combined using the options in **Unit Settings**.
+
+### Identification
+
+This module performs hierarchical compound identification.
+
+1. **Exact mass and isotope pattern matching** (Level 1 candidate screening).
+2. **Theoretical fragment prediction and matching**.
+3. **MS/MS spectral matching** against reference spectra.
+
+All matching parameters can be customized according to the analytical requirements.
 
 ---
 
