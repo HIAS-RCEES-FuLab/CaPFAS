@@ -32,7 +32,7 @@ CaPFAS was developed and tested on a personal computer with the following config
 - Processor: Intel(R) Core(TM) Ultra 7 258V (2.20 GHz), x64-based processor
 - Memory: 32.0 GB RAM (31.5 GB available)
 - GPU: Not required. The current version supports CPU-based inference.
-- Storage: Approximately 1 GB of free storage space is sufficient for the executable program, models, and example files.
+- Storage: Approximately 2 GB of free storage space is sufficient for the executable program, models, and example files.
 
 This configuration is sufficient for CaPFAS development and routine PFAS screening workflows. Additional storage space may be required when processing user-provided MS files or large spectral libraries.
 
