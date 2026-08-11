@@ -42,7 +42,9 @@ CaPFAS was developed using PyCharm 2024.3.4 with Python 3.9. The required Python
 
 The dependencies can be installed using the following command:
 
+```bash
 pip install -r requirements.txt
+```
 
 ## Model Reproduction Workflow
 
