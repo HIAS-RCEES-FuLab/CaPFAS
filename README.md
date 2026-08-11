@@ -62,6 +62,20 @@ The model reproduction workflow is organized into three main folders:
 
 By following the three folders in order, users can reproduce the complete model development workflow, from raw data processing and feature generation to model training, evaluation, and interpretation.
 
+## Demo Model and Test Data
+
+The repository provides a demo model (`Demo_model.pth`), a testing script (`Demo_model_testing.py`), and experimentally acquired PFAS standard MS/MS spectra (`standard_PFAS_NEG.csv`).
+
+Users can reproduce the model testing results by running `Demo_model_testing.py` after modifying the relative file paths according to their local environment. The provided test dataset contains 396 PFAS standard MS/MS spectra, and the obtained prediction results are consistent with those reported in the manuscript.
+
+Example output:
+
+File: standard_PFAS_NEG.csv
+Total Samples: 396
+Accuracy: 0.8712
+
+Final Test Set Overall Accuracy: 0.8712
+
 ---
 
 ## Platform
