@@ -1,4 +1,4 @@
-<img width="1202" height="821" alt="b2a5dde01144a0d127d2001ae0eb9b10" src="https://github.com/user-attachments/assets/93a71640-f691-4b89-a7ac-4ae4fd11ddde" /># CaPFAS
+# CaPFAS
 
 CaPFAS (Comprehensive Analysis of PFAS) is an integrated platform for comprehensive PFAS screening aligned with the OECD definition, comprising an interpretable multimodal neural network and a downstream structural annotation module.
 
