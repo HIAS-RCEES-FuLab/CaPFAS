@@ -44,7 +44,7 @@ The dependencies can be installed using:
 
 ```bash
 pip install -r requirements.txt
-
+```markdown
 ---
 
 ## Platform
