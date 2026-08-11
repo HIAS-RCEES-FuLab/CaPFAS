@@ -2,7 +2,7 @@
 
 CaPFAS (Comprehensive Analysis of PFAS) is an integrated platform for comprehensive PFAS screening aligned with the OECD definition, comprising an interpretable multimodal neural network and a downstream structural annotation module.
 
-This repository provides an implementation of the platform, including data cleaning, preprocessing, model training, screening methods, and result visualization.
+This repository provides the implementation of the CaPFAS model and the executable platform, including data preprocessing, feature engineering, model training, model interpretation, PFAS screening workflows, and result visualization.
 
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/2a8cdecb-0de6-4a09-a813-b9561868eba8" />
 
@@ -94,7 +94,7 @@ This module is used for MS feature extraction and preprocessing.
 
 - **Scan mode**
   - **DDA** is the recommended acquisition mode because each MS/MS spectrum is directly associated with its precursor ion.
-  - **DIA** and **Full Scan** data are also supported. For DIA data, CaPFAS performs model prediction using the acquired window-based MS/MS spectra because precursor-specific MS/MS spectra are unavailable. For Full Scan data, where no MS/MS spectra are acquired, the model directly uses the acquired MS spectra for prediction.
+  - **DIA** and **Full Scan** data are also supported. For DIA data, CaPFAS performs model prediction using the acquired window-based MS/MS spectra because precursor-specific MS/MS spectra are unavailable. For Full Scan data, where no MS/MS spectra are acquired, the model utilizes the acquired full-scan MS spectra and potential in-source fragmentation ions for prediction.
 
 - **Ion mode**
   - Select the ionization mode according to the experimental data.
@@ -168,6 +168,6 @@ The release includes:
 - Supporting datasets
 - Large-scale PFAS structural and spectral databases
 
-After downloading and extracting the Release package, convert the raw mass spectrometry files into mzML format using MSConvert before analysis. Then, launch the executable program to start the CaPFAS platform. The graphical user interface shown above provides access to the complete workflow, from mzML-based mass spectrometry data processing to final PFAS screening and structural annotation.
+After downloading and extracting the Release package, convert the raw mass spectrometry files into mzML format using MSConvert before analysis. The following workflow illustrates the steps for launching the CaPFAS executable platform.
 
 <img width="757" height="667" alt="workflow" src="https://github.com/user-attachments/assets/e6b0e6e7-ec69-4a1c-9966-fbace88d7cc6" />
