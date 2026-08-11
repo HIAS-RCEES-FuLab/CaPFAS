@@ -44,6 +44,24 @@ The dependencies can be installed using the following command:
 
 pip install -r requirements.txt
 
+## Model Reproduction Workflow
+
+The model reproduction workflow is organized into three main folders:
+
+1. **Code for Data Preprocessing and Cleaning**
+   
+   This folder contains the scripts for raw data preprocessing and cleaning. The internal steps are explicitly labeled. Users can execute the scripts sequentially according to the provided step numbers and modify the data paths according to their local environment.
+
+2. **Code for Data Feature Engineering**
+   
+   This folder contains the feature extraction and engineering scripts. Similar to the preprocessing workflow, the internal steps are labeled and should be executed sequentially after completing data preprocessing. Users only need to update the relevant data paths before running the scripts.
+
+3. **Code for Model Training and Interpretability Analysis**
+   
+   This folder contains the scripts for model development and evaluation, including training and testing of the proposed model, baseline models, ablation models, and downstream model interpretability analysis.
+
+By following the three folders in order, users can reproduce the complete model development workflow, from raw data processing and feature generation to model training, evaluation, and interpretation.
+
 ---
 
 ## Platform
