@@ -70,12 +70,10 @@ Users can reproduce the model testing results by running `Demo_model_testing.py`
 
 Example output:
 
-```text
 File: standard_PFAS_NEG.csv
 Total Samples: 396
 Accuracy: 0.8712
 Final Test Set Overall Accuracy: 0.8712
-` ``` `
 
 ---
 
