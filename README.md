@@ -38,7 +38,7 @@ This configuration is sufficient for CaPFAS development and routine PFAS screeni
 
 ## Software Requirements
 
-CaPFAS was developed using PyCharm 2024.3.4 with Python 3.9. The required Python dependencies are provided in the `requirements` file.
+CaPFAS was developed using PyCharm 2024.3.4 with Python 3.9. The required Python dependencies are provided in the `requirements.txt` file.
 
 The dependencies can be installed using the following command:
 
@@ -147,13 +147,11 @@ The GitHub Release provides a complete end-to-end analytical platform for PFAS n
 
 The release includes:
 
-- Complete source code
 - Executable programs
 - Data processing workflows
 - Supporting datasets
 - Large-scale PFAS structural and spectral databases
-- Support for integrating user-provided datasets
 
-After downloading and extracting the Release package, simply launch the executable program to start the CaPFAS platform. The graphical user interface shown above provides access to the complete workflow, from raw mass spectrometry data processing to final PFAS screening and structural annotation.
+After downloading and extracting the Release package, convert the raw mass spectrometry files into mzML format using MSConvert before analysis. Then, launch the executable program to start the CaPFAS platform. The graphical user interface shown above provides access to the complete workflow, from mzML-based mass spectrometry data processing to final PFAS screening and structural annotation.
 
 <img width="757" height="667" alt="workflow" src="https://github.com/user-attachments/assets/e6b0e6e7-ec69-4a1c-9966-fbace88d7cc6" />
