@@ -39,7 +39,9 @@ This configuration is sufficient for CaPFAS development and routine PFAS screeni
 ## Software Requirements
 
 CaPFAS was developed using PyCharm 2024.3.4 with Python 3.9. The required Python dependencies are provided in the `dependency.txt` file.
-The dependencies can be installed using:
+The dependencies can be installed using the following command:
+
+```bash
 pip install -r dependency.txt
 
 ---
