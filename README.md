@@ -36,7 +36,6 @@ CaPFAS was developed and tested on a personal computer with the following config
 
 This configuration is sufficient for CaPFAS development and routine PFAS screening workflows. Additional storage space may be required when processing user-provided MS files or large spectral libraries.
 
-```markdown
 ## Software Requirements
 
 CaPFAS was developed using PyCharm 2024.3.4 with Python 3.9. The required Python dependencies are provided in the `dependency.txt` file.
@@ -45,6 +44,7 @@ The dependencies can be installed using:
 
 ```bash
 pip install -r dependency.txt
+\---
 ---
 
 ## Platform
