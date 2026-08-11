@@ -1,4 +1,4 @@
-# CaPFAS
+<img width="1202" height="821" alt="b2a5dde01144a0d127d2001ae0eb9b10" src="https://github.com/user-attachments/assets/93a71640-f691-4b89-a7ac-4ae4fd11ddde" /># CaPFAS
 
 CaPFAS (Comprehensive Analysis of PFAS) is an integrated platform for comprehensive PFAS screening aligned with the OECD definition, comprising an interpretable multimodal neural network and a downstream structural annotation module.
 
@@ -35,6 +35,15 @@ CaPFAS was developed and tested on a personal computer with the following config
 - Storage: Approximately 2 GB of free storage space is sufficient for the executable program, models, and example files.
 
 This configuration is sufficient for CaPFAS development and routine PFAS screening workflows. Additional storage space may be required when processing user-provided MS files or large spectral libraries.
+
+## Software Requirements
+
+CaPFAS was developed using PyCharm 2024.3.4 with Python 3.9. The required Python dependencies are provided in the `dependency.txt` file.
+
+The dependencies can be installed using:
+
+```bash
+pip install -r requirements.txt
 
 ---
 
