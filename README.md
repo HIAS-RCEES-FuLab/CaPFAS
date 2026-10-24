@@ -176,5 +176,4 @@ The release includes:
 - Large-scale PFAS structural and spectral databases
 
 After downloading and extracting the Release package, convert the raw mass spectrometry files into mzML format using MSConvert before analysis. The following workflow illustrates the steps for launching the CaPFAS executable platform.
-
-<img width="757" height="667" alt="workflow" src="https://github.com/user-attachments/assets/e6b0e6e7-ec69-4a1c-9966-fbace88d7cc6" />
+<img width="604" height="381" alt="image" src="https://github.com/user-attachments/assets/7eafa531-23ec-4efe-b813-b0ff6f73cb4e" />
