@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
-
+# Positive ionization mode data available on Zenodo.
 files = ["fragment_neutral_loss_match_result_P_table.csv", "fragment_neutral_loss_match_result_N_table.csv"]
 
 data = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
