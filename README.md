@@ -4,7 +4,7 @@ CaPFAS (Comprehensive Analysis of PFAS) is an integrated platform for comprehens
 
 This repository provides the implementation of the CaPFAS model and the executable platform, including data preprocessing, feature engineering, model training, model interpretation, PFAS screening workflows, and result visualization.
 
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/2a8cdecb-0de6-4a09-a813-b9561868eba8" />
+<img width="1391" height="725" alt="1792820605339" src="https://github.com/user-attachments/assets/b2deba6c-1f14-49d5-b44e-af1d9ef22d1f" />
 
 ---
 
