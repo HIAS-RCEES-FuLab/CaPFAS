@@ -1,0 +1,7 @@
+Dataset,Ablation,Features,Bin_Size,Ion_Modes,Model,Accuracy,ROC_AUC,PR_AUC,TP,FN,TN,FP
+MS2_dataset_split_SMILES_type5_12_to_1,MS2,MS2,0.01,P_N,MS2_dataset_split_SMILES_type5_12_to_1_MS2_bin0p01_P_N_best_pr_auc_after3.pth,0.814,0.867,0.775,3444,1014,8096,1616
+MS2_dataset_split_SMILES_type5_12_to_1,NL,NL,0.01,P_N,MS2_dataset_split_SMILES_type5_12_to_1_NL_bin0p01_P_N_best_pr_auc_after3.pth,0.859,0.913,0.855,3274,1184,8898,814
+MS2_dataset_split_SMILES_type5_12_to_1,Precursor,Precursor,0.01,P_N,MS2_dataset_split_SMILES_type5_12_to_1_Precursor_bin0p01_P_N_best_pr_auc_after3.pth,0.472,0.747,0.519,4314,144,2380,7332
+MS2_dataset_split_SMILES_type5_12_to_1,MS2_NL,MS2+NL,0.01,P_N,MS2_dataset_split_SMILES_type5_12_to_1_MS2_NL_bin0p01_P_N_best_pr_auc_after3.pth,0.875,0.936,0.892,3552,906,8851,861
+MS2_dataset_split_SMILES_type5_12_to_1,MS2_Precursor,MS2+Precursor,0.01,P_N,MS2_dataset_split_SMILES_type5_12_to_1_MS2_Precursor_bin0p01_P_N_best_pr_auc_after3.pth,0.815,0.870,0.777,3573,885,7971,1741
+MS2_dataset_split_SMILES_type5_12_to_1,NL_Precursor,NL+Precursor,0.01,P_N,MS2_dataset_split_SMILES_type5_12_to_1_NL_Precursor_bin0p01_P_N_best_pr_auc_after3.pth,0.855,0.917,0.859,3493,965,8617,1095
