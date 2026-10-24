@@ -15,6 +15,10 @@ The spectral databases used in this project include:
 - **NIST 2020 MS/MS Library**
   - The library can be exported by following the MassFormer instructions:
   - https://github.com/Roestlab/massformer?tab=readme-ov-file#exporting-the-nist-data
+    
+- **NIST 2023 MS/MS Library**
+  - Requires a purchased license.
+  - Spectra must be manually exported in small batches from the licensed library.
 
 - **GNPS Spectral Libraries**
   - Available at:
