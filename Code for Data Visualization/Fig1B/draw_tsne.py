@@ -177,9 +177,6 @@ plt.savefig(
 
 plt.close()
 
-# =========================
-# 最终统计
-# =========================
 print("\n=========================")
 print(f"PFAS Number: {len(df):,}")
 print(f"PFAS PFC = 0，Blue: {mask_blue.sum():,}")
