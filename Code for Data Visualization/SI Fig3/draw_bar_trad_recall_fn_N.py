@@ -39,7 +39,6 @@ plt.tight_layout()
 plt.savefig(output_file, dpi=600, transparent=True, bbox_inches="tight")
 plt.show()
 
-# 输出最大 Recall
 print("=" * 40)
 print(f"Maximum Recall: {max_recall:.4f}")
 print(f"Feature number: {recall.idxmax() + 1}")
