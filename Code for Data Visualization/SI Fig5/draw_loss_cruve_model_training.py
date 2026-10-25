@@ -7,7 +7,7 @@ from matplotlib.ticker import MaxNLocator, FormatStrFormatter
 
 plt.rcParams["font.family"] = "Arial"
 
-file_path = r"D:\论文二修改\模型\train_inf"
+file_path = r"train_inf"
 
 # =========================
 # Select plotting target
