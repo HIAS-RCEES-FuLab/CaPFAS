@@ -11,6 +11,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 # -------------------------
 # 1. Read PFAS CSV
+# The other set of original data used for this analysis is not provided here because some information may be derived from commercially licensed data.
 # -------------------------
 df = pd.read_csv("PFAS.csv")
 df = df[['MOLECULAR FORMULA', 'MONOISOTOPIC MASS']].dropna()
