@@ -12,7 +12,7 @@ from sklearn.manifold import TSNE
 # ==================== Parameter ====================
 pfas_file = r"data/PFAS_structure_annotation_scaffold_CF2.csv"
 standard_file = r"data/Standard_unique.csv"
-# Contains nearly 9 million chemical structures; the dataset is too large to be publicly provided.
+# Contains nearly 9 million chemical structures; the dataset is available at https://doi.org/10.5281/zenodo.23618979.
 morgan_folder = r"data/OECD_PFAS/MorganFP_1024_R2"
 output_dir = r"data/PFAS_tSNE_repeated_500000"
 os.makedirs(output_dir, exist_ok=True)
