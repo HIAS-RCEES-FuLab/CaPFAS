@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 files = {
-    "KMD": r"D:\论文二修改\原始数据\数据集传统方法对比验证\KMD_range_scan_spectrum_compound.csv",
-    "KMD_norm": r"D:\论文二修改\原始数据\数据集传统方法对比验证\KMD_norm_range_scan_spectrum_compound.csv"
+    "KMD": r"KMD_range_scan_spectrum_compound.csv",
+    "KMD_norm": r"KMD_norm_range_scan_spectrum_compound.csv"
 }
 
 def plot_cm(cm, filename):
@@ -31,9 +31,6 @@ def plot_cm(cm, filename):
 for method, file in files.items():
     df = pd.read_csv(file)
 
-    # =========================
-    # Compound水平确定最佳边界
-    # =========================
     compound = df[df["Level"] == "Compound"].copy()
     compound["TPR_minus_FPR"] = compound["TPR"] - compound["FPR"]
     best_compound = compound.loc[compound["TPR_minus_FPR"].idxmax()]
@@ -48,19 +45,12 @@ for method, file in files.items():
     print("KMD_lower:", kmd_lower)
     print("KMD_upper:", kmd_upper)
 
-    # =========================
-    # 两个层级均使用Compound边界
-    # =========================
     for level in ["Spectrum", "Compound"]:
         sub = df[
             (df["Level"] == level) &
             (df["KMD_lower"] == kmd_lower) &
             (df["KMD_upper"] == kmd_upper)
         ].copy()
-
-        if len(sub) == 0:
-            print("未找到:", level)
-            continue
 
         best = sub.iloc[0]
 
