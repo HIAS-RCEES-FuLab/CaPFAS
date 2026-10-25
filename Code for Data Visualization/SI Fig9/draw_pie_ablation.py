@@ -63,5 +63,3 @@ for i, values in enumerate(data, start=1):
     )
 
     plt.close(fig)
-
-    print(f"已保存：{output_file}")
