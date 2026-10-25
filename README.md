@@ -22,7 +22,7 @@ The spectral databases used in this project include:
     
 - **NIST 2023 MS/MS Library**
   - Requires a purchased license.
-  - Spectra must be manually exported in small batches from the licensed library.
+  - Spectra were manually exported in small batches from the licensed library.
 
 - **GNPS Spectral Libraries**
   - Available at:
