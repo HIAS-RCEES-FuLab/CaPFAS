@@ -57,7 +57,6 @@ for ax, (ylabel, previous, ours) in zip(axes, datasets):
 
     ax.set_ylim(0, 1.0)
 
-    # 去掉上、右边框
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
@@ -68,9 +67,6 @@ for ax, (ylabel, previous, ours) in zip(axes, datasets):
         alpha=0.4
     )
 
-# =========================
-# 只在第一个 panel 添加 legend
-# =========================
 axes[0].legend(
     fontsize=11,
     frameon=False,
@@ -78,10 +74,6 @@ axes[0].legend(
 )
 
 plt.tight_layout()
-
-# =========================
-# 保存
-# =========================
 plt.savefig(
     "Molecular_network_performance_comparison.png",
     dpi=600,
