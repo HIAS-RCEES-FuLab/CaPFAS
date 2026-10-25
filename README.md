@@ -2,7 +2,11 @@
 
 CaPFAS (Comprehensive Analysis of PFAS) is an integrated platform for comprehensive PFAS screening aligned with the OECD definition, comprising an interpretable multimodal neural network and a downstream structural annotation module.
 
-This repository provides the implementation of the CaPFAS model and the executable platform, including data preprocessing, feature engineering, model training, model interpretation, PFAS screening workflows, and result visualization.
+This repository provides the implementation of the CaPFAS model and the executable platform, including data preprocessing, feature engineering, model training, model interpretation, PFAS screening workflows, and result visualization. The source files and Python scripts for figure generation are provided to facilitate the reproduction of figures presented in the manuscript.
+
+The data used to generate Fig. 1C (positive ionization mode) and Supplementary Fig. 1 (PFAS data from PubChem, approximately 1 GB) are available on Zenodo (DOI: 10.5281/zenodo.23618979).
+
+The commercial mass spectrometry data underlying Supplementary Figs. 4 and 10 cannot be publicly redistributed. For access inquiries, questions, or suggestions, please contact yezhihong23@mails.ucas.ac.cn.
 
 <img width="1391" height="725" alt="1792820605339" src="https://github.com/user-attachments/assets/b2deba6c-1f14-49d5-b44e-af1d9ef22d1f" />
 
