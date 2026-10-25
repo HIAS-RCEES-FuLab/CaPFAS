@@ -37,7 +37,6 @@ if max_abs == 0:
 
 norm = TwoSlopeNorm(vmin=-max_abs, vcenter=0, vmax=max_abs)
 
-# 淡雅蓝-白-橙配色
 soft_cmap = LinearSegmentedColormap.from_list(
     "soft_blue_white_orange",
     ["#A9C9E2", "#F7F7F5", "#E9B99D"]
@@ -50,7 +49,6 @@ im = ax.imshow(
     aspect="auto"
 )
 
-# 去除横纵坐标刻度、标签及所有数字
 ax.set_xticks([])
 ax.set_yticks([])
 ax.tick_params(
@@ -79,7 +77,6 @@ for spine in ax.spines.values():
     spine.set_color("black")
     spine.set_linewidth(0.5)
 
-# 不显示数值标注和色标
 cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
 plt.tight_layout()
 
