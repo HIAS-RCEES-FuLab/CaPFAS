@@ -171,7 +171,6 @@ for batch in range(1, n_batches + 1):
     print(f"MorganFP: {current_morgan_count:,}")
     print(f"MorganFP Index: {morgan_sample_indices.min():,} - {morgan_sample_indices.max():,}")
 
-    # ==================== 合并 ====================
     sampled_fps = np.vstack([pfas_fps, standard_fps, sampled_morgan_fps])
     sampled_labels = np.concatenate([
         np.repeat("PFAS", pfas_count),
@@ -242,9 +241,7 @@ for batch in range(1, n_batches + 1):
     csv_file = os.path.join(output_dir, f"tSNE_batch_{batch:02d}.csv")
     result_df.to_csv(csv_file, index=False, encoding="utf-8-sig")
     print(f"CSV: {csv_file}")
-
-    # ==================== 绘图 ====================
-    print("Plotting t-SNE 图...")
+    print("Plotting...")
 
     fig, ax = plt.subplots(figsize=(5, 5))
 
