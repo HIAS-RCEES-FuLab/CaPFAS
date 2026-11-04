@@ -17,6 +17,7 @@ The commercial mass spectrometry data underlying Supplementary Figs. 4 and 10 ca
 The spectral databases used in this project include:
 
 - **NIST 2020 MS/MS Library**
+  - Requires a purchased license.
   - The library can be exported by following the MassFormer instructions:
   - https://github.com/Roestlab/massformer?tab=readme-ov-file#exporting-the-nist-data
     
