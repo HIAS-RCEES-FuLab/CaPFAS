@@ -166,6 +166,14 @@ This module is used to configure the input mass spectrometry files and the outpu
 
 <img width="3884" height="2288" alt="图片1" src="https://github.com/user-attachments/assets/41cb5732-691a-4e55-ac48-425b961bdc3b" />
 
+### Output Files
+After the analysis is completed, the specified output directory will contain the following files and folders:
+- peakpicking/: Contains the original peak-picking results for each input mass spectrometry file, with each file processed separately.
+- combined_peakpicking.csv: Contains the combined peak-picking results from all input files.
+- feature_filter.csv: Contains the features retained after filtering the combined peak-picking results. These features are subsequently used for compound identification.
+- identification_level4.csv, identification_level3.csv, and identification_level2.csv: Contain the hierarchical compound identification results at Levels 4, 3, and 2, respectively. Identification is performed progressively based on the features retained in feature_filter.csv, with each level representing a different stage of identification.
+- level4_details/, level3_details/, and level2_details/: Contain detailed identification information corresponding to the respective identification levels. Each CSV file records the detailed results for an individual feature.
+
 ---
 
 ## Release
