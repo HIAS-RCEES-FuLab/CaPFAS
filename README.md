@@ -122,7 +122,7 @@ This module is used for MS feature extraction and preprocessing.
   - Extracts MS/MS spectra associated with detected features for downstream analysis.
 
 - **Single-trace filtering**
-  - Uses the OpenMS single-trace filtering algorithm to remove low-confidence features and reduce potential false-positive peaks.
+  - Uses the OpenMS single-trace filtering algorithm to remove low-confidence features and reduce potential false-positive peaks. However, this filtering step may also inadvertently remove features corresponding to low-concentration contaminants.
 
 - **Adduct annotation**
   - Annotates supported adduct ions according to predefined adduct rules.
@@ -171,10 +171,14 @@ This module is used to configure the input mass spectrometry files and the outpu
 After the analysis is completed, the specified output directory will contain the following files and folders:
 
 - **peakpicking/**: Contains the original peak-picking results for each input mass spectrometry file, with each file processed separately.
-- combined_peakpicking.csv: Contains the combined peak-picking results from all input files.
-- feature_filter.csv: Contains the features retained after filtering the combined peak-picking results. These features are subsequently used for compound identification.
-- identification_level4.csv, identification_level3.csv, and identification_level2.csv: Contain the hierarchical compound identification results at Levels 4, 3, and 2, respectively. Identification is performed progressively based on the features retained in feature_filter.csv, with each level representing a different stage of identification.
-- level4_details/, level3_details/, and level2_details/: Contain detailed identification information corresponding to the respective identification levels. Each CSV file records the detailed results for an individual feature.
+
+- **combined_peakpicking.csv**: Contains the combined peak-picking results from all input files.
+
+- **feature_filter.csv**: Contains the features retained after filtering the combined peak-picking results. These features are subsequently used for compound identification.
+  
+- **identification_level4.csv, identification_level3.csv, and identification_level2.csv**: Contain the hierarchical compound identification results at Levels 4, 3, and 2, respectively. Identification is performed progressively based on the features retained in feature_filter.csv, with each level representing a different stage of identification.
+  
+- **level4_details/, level3_details/, and level2_details/**: Contain detailed identification information corresponding to the respective identification levels. Each CSV file records the detailed results for an individual feature.
 
 ---
 
